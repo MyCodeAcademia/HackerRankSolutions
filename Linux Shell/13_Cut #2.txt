@@ -1,0 +1,5 @@
+#!/bin/bash
+while read Word
+do
+echo $Word | cut -c2,7
+done

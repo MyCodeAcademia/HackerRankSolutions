@@ -1,0 +1,4 @@
+#!/bin/bash
+arr1=($(cat))
+arr+=( "${arr1[@]}" "${arr1[@]}" "${arr1[@]}" )
+echo "${arr[@]}"

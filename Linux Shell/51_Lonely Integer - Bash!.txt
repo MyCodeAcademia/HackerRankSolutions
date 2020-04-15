@@ -1,0 +1,4 @@
+#!/bin/bash
+read n
+array=($(cat))
+printf "%s\n" "${array[@]}" | sort | uniq -u

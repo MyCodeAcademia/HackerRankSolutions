@@ -1,0 +1,14 @@
+read X
+read Y
+read Z
+
+if [[ $X -eq $Y && $X -eq $Z && $Y -eq $Z ]]
+then
+echo "EQUILATERAL"
+elif [[ $X -ne $Y && $Y -ne $Z && $X -ne $Z ]]
+then
+echo "SCALENE"
+elif [[ $X -eq $Y && $X -ne $Z ]] || [[ $Y -eq $Z && $X -ne $Z ]] || [[ $X -eq $Z && $Z -ne $Y ]]
+then
+echo "ISOSCELES"
+fi
